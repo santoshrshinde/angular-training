@@ -1,3 +1,19 @@
 .title {
   border: 3px solid red;
 }
+
+.back-color {
+  background-color: #dfdfdf;
+}
+.switch {
+  margin: 10px;
+  border: 2px solid #dfdfdf;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}

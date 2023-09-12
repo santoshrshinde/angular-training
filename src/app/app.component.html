@@ -1,3 +1,24 @@
-<button (click)="getData()">click</button>
-<div *ngIf="title" class="title">{{title}}</div>
+<!-- <button (click)="toggle()">click</button>
+<br/>
+<div *ngIf="isTitle" class="title">{{title}}</div>
 
+<div> User List</div>
+
+<ul>
+  <li *ngFor="let user of users; let i = index; trackBy:userId">
+    <span  [ngClass]="{'back-color': user.name === 'test 1'}"> {{i}} {{user.id}} {{user.name}}</span> <button (click)="delete(user)">Delete</button>
+  </li>
+</ul>
+
+<input type="text">
+<div [ngSwitch]="userResponse">
+  <div class="switch error" *ngSwitchCase="'error'">All fileds are mandatory</div>
+  <div class="switch success" *ngSwitchCase="'success'">Data saved success!</div>
+  <div *ngSwitchDefault></div>
+</div>
+ -->
+ <ul>
+  <li><a routerLink="/user-list">User List</a></li>
+  <li><a routerLink="/user-details">User Details</a></li>
+ </ul>
+<router-outlet></router-outlet>
