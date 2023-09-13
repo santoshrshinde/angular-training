@@ -14,6 +14,10 @@ const routes: Routes = [
     component: UserDetailsComponent
   },
   {
+    path: 'user-details/:id',
+    component: UserDetailsComponent
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: '/user-list'

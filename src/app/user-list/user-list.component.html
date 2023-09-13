@@ -1,5 +1,6 @@
 <div class="container">
   <h2>User List</h2>
+  <button class="btn btn-sm btn-success" routerLink="/user-details">Add New</button>
   <div class="table-responsive">
     <table class="table table-bordered">
       <thead>
@@ -12,8 +13,8 @@
           <td>{{user.title}}</td>
           <td>{{user.body}}</td>
           <td>
-            <button (click)="delete(index)">Delete</button>
-            <button>Edit</button>
+            <div class="d-flex"><button (click)="delete(index)" class="m-1"> <i class="fa fa-trash"></i></button>
+              <button class="m-1" (click)="edit(user)"><i class="fa fa-pencil"></i></button></div>
           </td>
         </tr>
       </tbody>
